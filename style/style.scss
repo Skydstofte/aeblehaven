@@ -1,0 +1,89 @@
+// Variable declarations 
+
+// Fonts
+$font-headline: 'IM Fell English SC', serif;
+$font-body: 'Assistant', sans-serif;
+
+// Basic stylesheet reset
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    min-width: 320px;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+  
+ol, ul {
+    list-style: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+// Logo homebutton styling
+#logo-container {
+    background: transparent;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    transition: all 0.6s ease;
+    height: 60px;
+    background-color: rgba(164,165,200, 0.7);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.logo-container-minimized {
+    right: -137px !important;
+    transition: all 0.6s ease;
+}
+
+
+#logo-container-homebutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo-container-homebutton img {
+    width: 60px;
+}
+
+#logo-container-homebutton h3 {
+    padding: 0 10px;
+    color: black;
+    font-family: $font-headline;
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 480px) {
+
+    #logo-container {
+        background: transparent;
+        position: fixed;
+        top: 20px;
+        right: -137px;
+        height: 60px;
+        transition: all 1s ease;
+    }
+
+    #logo-container:hover {
+        right: 0;
+    }
+
+}
