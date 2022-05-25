@@ -4,4 +4,40 @@
 $font-headline: 'IM Fell English SC', serif;
 $font-body: 'Miriam Libre', sans-serif;
 
+// Frontpage header styling - mobilefirst
+.aeblehaven-header {
+    background-image: none;
+}
+
 // Frontpage styling - mobilefirst
+.frontpage-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.frontpage-content-entryway img {
+    width: 200%;
+    overflow-x: hidden;
+}
+
+// .frontpage-content-fenze {
+//     display: flex;
+//     justify-content: center;
+//     position: fixed;
+//     top: 50vh;
+// }
+
+// .frontpage-content-fenze img {
+//     width: 90%;
+// }
+
+// .frontpage-content-pavement {
+//     width: 100%;
+//     height: 200px;
+//     background-color: #5A5858;
+//     position: fixed;
+//     top: 80vh;
+// }
