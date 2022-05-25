@@ -1,22 +1,6 @@
-main {
-  background-color: #316439;
-  background-image: url(/images/grass.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 .history-container {
   width: 90%;
   margin: 0 auto;
-}
-
-.history-container h1 {
-  font-family: "IM Fell English SC", serif;
-  text-align: center;
-  font-size: 45px;
-  padding: 80px 0 20px;
 }
 
 .history-container-content {
@@ -28,42 +12,26 @@ main {
   width: 100%;
 }
 
-#history-arrow-one {
-  margin-left: 20%;
-  width: 40px;
+.history-container-textbox h2 {
+  font-family: "IM Fell English SC", serif;
+  text-align: center;
+  font-size: 32px;
+  color: white;
 }
 
-#history-arrow-two {
-  margin-left: 70%;
-  width: 40px;
-}
-
-#history-arrow-three {
-  margin-left: 50%;
-  width: 40px;
-}
-
-#history-arrow-four {
-  margin-left: 40%;
-  width: 40px;
+.history-container-arrows {
+  display: none;
 }
 
 .history-container-content-textbox {
-  font-family: "Assistant", sans-serif;
-  background-color: rgba(230, 225, 180, 0.95);
+  font-family: "Miriam Libre", sans-serif;
+  background-color: #E8F9FF;
   font-size: 20px;
   font-weight: bolder;
   padding: 20px;
-  margin: 10px auto;
+  margin: 10px auto 40px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-.history-container-content-textbox h2 {
-  font-family: "IM Fell English SC", serif;
-  text-align: center;
-  font-size: 28px;
-  padding-bottom: 10px;
 }
 
 @media only screen and (min-width: 480px) {
@@ -80,6 +48,88 @@ main {
 }
 
 @media only screen and (min-width: 769px) {
+  .history-container-content {
+    width: 100%;
+    position: relative;
+  }
+  .history-container-textbox img {
+    width: 250px;
+    position: absolute;
+  }
+  #history-container-textbox1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 65%;
+  }
+  #history-container-textbox1 h2 {
+    margin-top: 250px;
+    position: absolute;
+  }
+  #history-container-textbox2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0;
+  }
+  #history-container-textbox2 h2 {
+    margin-top: 200px;
+    position: absolute;
+    margin-right: 0;
+  }
+  #history-container-textbox3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0;
+    margin-top: 250px;
+  }
+  #history-container-textbox3 h2 {
+    margin-top: 200px;
+    position: absolute;
+    margin-right: 0;
+  }
+  #history-container-textbox4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 65%;
+  }
+  #history-container-textbox4 h2 {
+    margin-top: 250px;
+    position: absolute;
+  }
+  #history-container-textbox5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 30%;
+    margin-top: 250px;
+  }
+  #history-container-textbox5 h2 {
+    margin-top: 200px;
+    position: absolute;
+  }
   #history-container-textbox1 #textbox-1 {
     display: none;
   }
@@ -128,6 +178,25 @@ main {
   }
   .history-container-content-textbox {
     width: 70%;
+  }
+  .history-container-arrows {
+    display: block;
+  }
+  #history-arrow-one {
+    margin-left: 20%;
+    width: 40px;
+  }
+  #history-arrow-two {
+    margin-left: 70%;
+    width: 40px;
+  }
+  #history-arrow-three {
+    margin-left: 50%;
+    width: 40px;
+  }
+  #history-arrow-four {
+    margin-left: 40%;
+    width: 40px;
   }
 }
 /*# sourceMappingURL=history.css.map */

@@ -2,56 +2,6 @@
 
 // Fonts
 $font-headline: 'IM Fell English SC', serif;
-$font-body: 'Assistant', sans-serif;
+$font-body: 'Miriam Libre', sans-serif;
 
 // Frontpage styling - mobilefirst
-main {
-    width: 100%;
-    overflow: hidden;
-    background-color: rgb(103, 145, 103);
-}
-
-#frontpage-background-elements-bush { 
-	width: 100%;
-    height: 100px;
-    position: absolute;
-    margin-top: 70vh;
-}
-
-
-.frontpage-container {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.frontpage-container-content {
-    // display: flex;
-    // justify-content: center;
-}
-
-.frontpage-container-content-img {
-    width: 250px;
-}
-
-#img-icecreammenu {
-    float: right;
-    margin: 10px 20px;
-}
-
-#img-facilities-rollercoaster {
-    float: right;
-    margin: 10px 0;
-}
-
-#img-kiosk {
-    margin: 10px 20px;
-}
-
-#img-appletrees {
-    float: right;
-    margin: 10px 20px;
-}
-
-#img-facilities-bikestation {
-    margin: 10px 20px;
-}
