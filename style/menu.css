@@ -11,4 +11,50 @@
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
+
+#logo-container-logo-white {
+  display: none;
+}
+
+.menu-container-mobile {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  font-family: "IM Fell English SC", serif;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 480px) {
+  .menu-container {
+    font-size: 4.167vw;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  #logo-container-logo-black {
+    display: none;
+  }
+  #logo-container-logo-white {
+    display: block;
+  }
+  #logo-container:hover {
+    background-color: #A38978;
+    border-style: solid;
+    border-color: white;
+  }
+  #logo-container-homebutton h3 {
+    color: white;
+  }
+  #mobile-menu {
+    display: none;
+  }
+  .aeblehaven-header {
+    background: none;
+  }
+}
 /*# sourceMappingURL=menu.css.map */
