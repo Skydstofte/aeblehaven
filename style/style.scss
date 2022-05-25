@@ -27,7 +27,18 @@ a:visited {text-decoration: none;}
 a:hover {text-decoration: none;}
 a:active {text-decoration: none;}
 
-// Logo homebutton styling
+
+// Background styling for all of the pages that has a grass background
+#background-container {
+    background-color: rgb(49, 100, 57);
+    background-image: url(/images/grassbackground.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+// Header styling
 
 .aeblehaven-header {
     width: 100%;
@@ -41,6 +52,13 @@ a:active {text-decoration: none;}
 #aeblehaven-header-sky {
     height: 150px;
     position: absolute;
+}
+
+.aeblehaven-header h1 {
+    font-family: $font-headline;
+    text-align: center;
+    font-size: 35px;
+    padding: 80px 0 20px;
 }
 
 #logo-container {

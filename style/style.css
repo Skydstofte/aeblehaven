@@ -33,6 +33,15 @@ a:active {
   text-decoration: none;
 }
 
+#background-container {
+  background-color: #316439;
+  background-image: url(/images/grassbackground.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .aeblehaven-header {
   width: 100%;
   height: 150px;
@@ -45,6 +54,13 @@ a:active {
 #aeblehaven-header-sky {
   height: 150px;
   position: absolute;
+}
+
+.aeblehaven-header h1 {
+  font-family: "IM Fell English SC", serif;
+  text-align: center;
+  font-size: 35px;
+  padding: 80px 0 20px;
 }
 
 #logo-container {
