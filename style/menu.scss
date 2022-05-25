@@ -1,0 +1,21 @@
+// Variable declarations 
+
+// Fonts
+$font-headline: 'IM Fell English SC', serif;
+$font-body: 'Miriam Libre', sans-serif;
+
+// menu header styling
+.aeblehaven-header h1 {
+    text-align: center;
+    font-family: $font-headline;
+    padding-bottom: 0;
+}
+
+.aeblehaven-header h4 {
+    text-align: center;
+    font-family: $font-headline;
+    font-size: 25px;
+    transform: translateY(-10px)
+}
+
+// menu main content
