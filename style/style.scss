@@ -36,6 +36,7 @@ a:active {text-decoration: none;}
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    height: 100vh;
 }
 
 // Header styling
@@ -47,6 +48,7 @@ a:active {text-decoration: none;}
     background-position: bottom left;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 #aeblehaven-header-sky {
@@ -56,9 +58,10 @@ a:active {text-decoration: none;}
 
 .aeblehaven-header h1 {
     font-family: $font-headline;
-    text-align: center;
     font-size: 40px;
-    padding: 90px 0 20px;
+    position: absolute;
+    bottom: 40px;
+    left: 13vw;
 }
 
 #logo-container {
@@ -102,6 +105,10 @@ a:active {text-decoration: none;}
 
 @media only screen and (min-width: 480px) {
 
+    .aeblehaven-header h1 {
+        font-size: 8.5vw;
+    }
+
     #logo-container {
         background: transparent;
         position: fixed;
@@ -116,4 +123,24 @@ a:active {text-decoration: none;}
         right: 0;
     }
 
+}
+
+@media only screen and (min-width: 769px) {
+    
+    .aeblehaven-header h1 {
+        font-size: 65px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+        left: 0;
+        top: 55px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .aeblehaven-header h1 {
+        font-size: 6.5vw;
+        top: 40px;
+    }
 }

@@ -31,7 +31,7 @@ $box-shadow:
     color: white;
 }
 
-.history-container-arrows {
+.history-container-arrows img {
     display: none;
 }
 
@@ -70,80 +70,68 @@ $box-shadow:
 @media only screen and (min-width: 769px) {
 
 // History platforms - styling
+    .history-container {
+        width: 100%;
+    }
+
     .history-container-content {
         width: 100%;
         position: relative;
+        padding: 0;
     }
 
-    .history-container-textbox img {
-        width: 250px;
-        position: absolute;
+    .history-container-textbox {
+        position: relative;
+    }
+    
+    .history-content-aspect-ratio {
+        width: 25vw;
+        aspect-ratio: 1 / 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .history-content-aspect-ratio img {
+        width: 100%;
+    }
+
+    .history-content-aspect-ratio h2 {
+        font-size: 3.35vw;
     }
 
 // Platform 1
     #history-container-textbox1 {
-        display: flex;
-        flex-direction: column;
-        margin-right: 65%;
-    }
-
-    #history-container-textbox1 h2 {
-        margin-top: 250px;
+        left: 5vw;
+        top: -5vh;
         position: absolute;
-    }
-
-    #history-arrow-one {
     }
 
 // Platform 2
     #history-container-textbox2 {
-        display: flex;
-        flex-direction: column;
-        margin-right: 0;
-    }
-
-    #history-container-textbox2 h2 {
-        margin-top: 200px;
+        left: 40vw;
+        top: -5vh;
         position: absolute;
-        margin-right: 0;
     }
 
 // Platform 3
     #history-container-textbox3 {
-        display: flex;
-        flex-direction: column;
-        margin-right: 0;
-        margin-top: 250px;
-    }
-
-    #history-container-textbox3 h2 {
-        margin-top: 200px;
+        left: 70vw;
+        top: 5vh;
         position: absolute;
-        margin-right: 0;
     }
 
 // Platform 4
     #history-container-textbox4 {
-        display: flex;
-        flex-direction: column;
-        margin-right: 65%;
-    }
-
-    #history-container-textbox4 h2 {
-        margin-top: 250px;
+        left: 47vw;
+        top: 35vh;
         position: absolute;
     }
 
 // Platform 5
     #history-container-textbox5 {
-        display: flex;
-        flex-direction: column;
-        margin-right: 30%;
-        margin-top: 250px;
-    }
-
-    #history-container-textbox5 h2 {
-        margin-top: 200px;
+        left: 15vw;
+        top: 30vh;
         position: absolute;
     }
 
@@ -156,23 +144,43 @@ $box-shadow:
 
     #history-container-textbox1:hover #textbox-1 {
         display: block;
+        width: 40vw;
         position: absolute;
+        transform: translateX(45vw);
+        margin-top: 150px;
+        z-index: 1;
     } 
     #history-container-textbox2:hover #textbox-2 {
         display: block;
+        width: 40vw;
         position: absolute;
+        transform: translateX(7vw);
+        margin-top: 550px;
+        z-index: 1;
     } 
     #history-container-textbox3:hover #textbox-3 {
         display: block;
+        width: 40vw;
         position: absolute;
+        transform: translateX(-30vw);
+        margin-top: 80px;
+        z-index: 1;
     } 
     #history-container-textbox4:hover #textbox-4 {
         display: block;
+        width: 40vw;
         position: absolute;
+        transform: translateX(7vw);
+        margin-bottom: 600px;
+        z-index: 1;
     } 
     #history-container-textbox5:hover #textbox-5 {
         display: block;
+        width: 40vw;
         position: absolute;
+        transform: translateX(45vw);
+        margin-top: 10px;
+        z-index: 1;
     }
 
     .history-container-textbox {
@@ -185,27 +193,128 @@ $box-shadow:
         width: 70%;
     }
 
-    .history-container-arrows {
+    .history-container-arrows img {
         display: block;
+        width: 100px;
+        position: absolute;
     }
     
     #history-arrow-one {
-        margin-left: 20%;
-        width: 40px;
+        left: 31vw;
+        top: 15vh;
+        width: 8vw;
+        transform: rotate(-20deg);
     }
     
     #history-arrow-two {
-        margin-left: 70%;
-        width: 40px;
+        left: 64vw;
+        top: 10vh;
+        width: 6vw;
+        transform: rotate(-20deg);
     }
     
     #history-arrow-three {
-        margin-left: 50%;
-        width: 40px;
+        left: 73vw;
+        top: 42vh;
+        width: 6vw;
     }
     
     #history-arrow-four {
-        margin-left: 40%;
-        width: 40px;
+        left: 40vw;
+        top: 49vh;
+        width: 5vw;
     }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .history-container {
+        width: 1025px;
+        max-width: 1025px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .history-container-textbox {
+        width: 270px;
+        // background-color: aquamarine;
+    }
+
+    .history-content-aspect-ratio img {
+        width: 260px;
+    }
+
+    .history-content-aspect-ratio h2 {
+        font-size: 35px;
+    }
+
+    // Platform 1
+    #history-container-textbox1 {
+        left: 45px;
+        top: -5vh;
+        position: absolute;
+    }
+
+// Platform 2
+    #history-container-textbox2 {
+        left: 400px;
+        top: -5vh;
+        position: absolute;
+    }
+
+// Platform 3
+    #history-container-textbox3 {
+        left: 710px;
+        top: 5vh;
+        position: absolute;
+    }
+
+// Platform 4
+    #history-container-textbox4 {
+        left: 475px;
+        top: 35vh;
+        position: absolute;
+    }
+
+// Platform 5
+    #history-container-textbox5 {
+        left: 145px;
+        top: 30vh;
+        position: absolute;
+    }
+
+// Arrows
+
+
+
+#history-arrow-one {
+    left: 310px;
+    top: 105px;
+    transform: rotate(-20deg);
+    position: absolute;
+    width: 80px;
+}
+
+#history-arrow-two {
+    left: 650px;
+    top: 70px;
+    transform: rotate(-20deg);
+    position: absolute;
+    width: 60px;
+}
+
+#history-arrow-three {
+    left: 750px;
+    top: 310px;
+    position: absolute;
+    width: 60px;
+}
+
+#history-arrow-four {
+    left: 410px;
+    top: 3356x;
+    position: absolute;
+    width: 50px;
+}
+
 }
