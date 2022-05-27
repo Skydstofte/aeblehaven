@@ -74,7 +74,14 @@ $font-body: 'Miriam Libre', sans-serif;
     .aeblehaven-header {
         background: none;
     }
-    #menu-container-desktop {
+    #desktop-menu {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        font-family: $font-headline;
+        font-size: 20px;
+        text-align: center;
         
     }
 }
