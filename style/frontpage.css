@@ -1,20 +1,19 @@
 .aeblehaven-header {
   background-image: none;
+  height: 240px;
+}
+
+.aeblehaven-header h1 {
+  margin: 50px auto 0;
+  width: 80%;
+  text-align: center;
+  font-size: 50px;
 }
 
 .frontpage-container {
   width: 100%;
+  min-width: 320px;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   position: relative;
 }
 
@@ -31,6 +30,71 @@
 }
 
 .frontpage-content-entryway img {
-  width: 400%;
+  position: fixed;
+  bottom: 0px;
+  min-width: 1600px;
+}
+
+.frontpage-container-entryway-sign {
+  position: fixed;
+  bottom: 130px;
+  background-color: #E8F9FF;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 150px;
+  font-family: "IM Fell English SC", serif;
+  padding: 5px 0;
+}
+
+.frontpage-container-entryway-sign h1 {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+.frontpage-container-entryway-sign p {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+  color: black;
+}
+
+@media only screen and (min-width: 769px) {
+  .frontpage-content-entryway {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .frontpage-content-entryway img {
+    position: fixed;
+    bottom: 0;
+    left: -800px;
+    height: 70vh;
+    min-height: 460px;
+  }
+  .frontpage-container-entryway-sign {
+    height: 70px;
+    bottom: 180px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (min-height: 660px) {
+  .frontpage-container-entryway-sign {
+    height: 70px;
+    bottom: 27vh;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-height: 660px) {
+  .frontpage-container-entryway-sign {
+    bottom: 180px;
+  }
 }
 /*# sourceMappingURL=frontpage.css.map */
