@@ -71,5 +71,9 @@
     color: white;
     text-align: center;
   }
+  .menu-container-desktop-ul {
+    width: 300px;
+    max-width: 750px;
+  }
 }
 /*# sourceMappingURL=menu.css.map */
