@@ -33,6 +33,7 @@ $font-body: 'Miriam Libre', sans-serif;
 
 }
 
+// mobile-first styling
 @media only screen and (min-width: 480px) {
     .menu-container {
         font-size: 4.167vw;
@@ -40,7 +41,12 @@ $font-body: 'Miriam Libre', sans-serif;
     
 }
 
+// desktop styling
 @media only screen and (min-width: 650px) {
+
+    #background-container{
+        background-image: url(/images/menu/background.png);
+    }
 
     #logo-container-logo-black {
         display: none;
@@ -67,5 +73,8 @@ $font-body: 'Miriam Libre', sans-serif;
 
     .aeblehaven-header {
         background: none;
+    }
+    #menu-container-desktop {
+        
     }
 }

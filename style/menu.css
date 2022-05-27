@@ -36,6 +36,9 @@
 }
 
 @media only screen and (min-width: 650px) {
+  #background-container {
+    background-image: url(/images/menu/background.png);
+  }
   #logo-container-logo-black {
     display: none;
   }
