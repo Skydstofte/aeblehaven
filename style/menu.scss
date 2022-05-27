@@ -74,6 +74,8 @@ $font-body: 'Miriam Libre', sans-serif;
     .aeblehaven-header {
         background: none;
     }
+
+    // Menu styling
     #desktop-menu {
         width: 90%;
         display: flex;
@@ -85,6 +87,16 @@ $font-body: 'Miriam Libre', sans-serif;
         text-align: center;   
         
 
+    }
+
+    // menu content styling
+    .menu-container-desktop-ul {
+        width: 300px;
+        max-width: 750px;
+        
+
+    
+    
     }
     
 }
