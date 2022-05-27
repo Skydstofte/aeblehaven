@@ -36,6 +36,9 @@
 }
 
 @media only screen and (min-width: 650px) {
+  #background-container {
+    background-image: url(/images/menu/background.png);
+  }
   #logo-container-logo-black {
     display: none;
   }
@@ -53,6 +56,20 @@
   }
   .aeblehaven-header {
     background: none;
+  }
+  #desktop-menu {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    font-family: "IM Fell English SC", serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=menu.css.map */
