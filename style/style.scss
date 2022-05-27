@@ -49,6 +49,7 @@ a:active {text-decoration: none;}
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    overflow-x: hidden;
 }
 
 #aeblehaven-header-sky {
@@ -59,9 +60,9 @@ a:active {text-decoration: none;}
 .aeblehaven-header h1 {
     font-family: $font-headline;
     font-size: 40px;
-    position: absolute;
-    bottom: 40px;
-    left: 13vw;
+    position: relative;
+    top: 80px;
+    text-align: center;
 }
 
 #logo-container {

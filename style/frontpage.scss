@@ -12,32 +12,21 @@ $font-body: 'Miriam Libre', sans-serif;
 // Frontpage styling - mobilefirst
 .frontpage-container {
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     position: relative;
 }
 
-.frontpage-content-entryway img {
-    width: 200%;
-    overflow-x: hidden;
+.frontpage-content-entryway {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
 }
 
-// .frontpage-content-fenze {
-//     display: flex;
-//     justify-content: center;
-//     position: fixed;
-//     top: 50vh;
-// }
+.frontpage-content-entryway img {
+    width: 400%;
 
-// .frontpage-content-fenze img {
-//     width: 90%;
-// }
-
-// .frontpage-content-pavement {
-//     width: 100%;
-//     height: 200px;
-//     background-color: #5A5858;
-//     position: fixed;
-//     top: 80vh;
-// }
+}
