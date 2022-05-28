@@ -16,7 +16,7 @@
   display: none;
 }
 
-.menu-container-mobile {
+.foodmenu-container-mobile {
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,12 +29,12 @@
   font-size: 20px;
 }
 
-.menu-container-li ul {
+.foodmenu-container-li ul {
   margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 480px) {
-  .menu-container {
+  .foodmenu-container {
     font-size: 4.167vw;
   }
 }
@@ -55,13 +55,13 @@
   #logo-container-homebutton h3 {
     color: white;
   }
-  #mobile-menu {
+  #mobile-foodmenu {
     display: none;
   }
   .aeblehaven-header {
     background: none;
   }
-  #desktop-menu {
+  #desktop-foodmenu {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -74,10 +74,6 @@
     font-size: 20px;
     color: white;
     text-align: center;
-  }
-  .menu-container-desktop-ul {
-    width: 300px;
-    max-width: 750px;
   }
 }
 /*# sourceMappingURL=menu.css.map */
