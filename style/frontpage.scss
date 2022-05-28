@@ -5,18 +5,28 @@ $font-headline: 'IM Fell English SC', serif;
 $font-body: 'Miriam Libre', sans-serif;
 
 // Frontpage header styling - mobilefirst
+
 .aeblehaven-header {
     background-image: none;
+    height: 240px;
+}
+
+.aeblehaven-header h1 {
+    margin: 50px auto 0;
+    width: 80%;
+    text-align: center;
+    font-size: 50px;
 }
 
 // Frontpage styling - mobilefirst
 .frontpage-container {
     width: 100%;
+    min-width: 320px;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     position: relative;
+}
+
+.frontpage-container-content {
 }
 
 .frontpage-content-entryway {
@@ -26,7 +36,121 @@ $font-body: 'Miriam Libre', sans-serif;
     position: sticky;
 }
 
-.frontpage-content-entryway img {
-    width: 400%;
+.frontpage-content-entryway #entryway-mobile {
+    position: fixed;
+    bottom: 0px;
+    min-width: 1600px;
+}
 
+#entryway-desktop {
+    display: none;
+}
+
+.frontpage-container-entryway-sign {
+    position: fixed;
+    bottom: 130px;
+    background-color: #E8F9FF;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 150px;
+    font-family: $font-headline;
+    padding: 5px 0;
+}
+
+.frontpage-container-entryway-sign h1 {
+    text-align: center;
+    font-size: 25px;
+    color: black;
+}
+
+.frontpage-container-entryway-sign p {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    color: black;
+}
+
+.frontpage-container-sebastian {
+    display: none;
+}
+
+.frontpage-container-sebastian-taleboble {
+    display: none;
+}
+
+@media only screen and (min-width: 769px) {
+    .frontpage-content-entryway {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+    }
+
+    #entryway-mobile {
+        display: none;
+    }
+
+    .frontpage-content-entryway #entryway-desktop {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        // left: -32.4rem;
+        left: -540px;
+        height: 70vh;
+        // min-height: 460px;
+        min-height: 590px;
+    }
+
+    .frontpage-container-entryway-sign {
+        height: 70px;
+        bottom: 120px;
+        left: 386px;
+    }
+
+    .frontpage-container-sebastian {
+        display: block;
+        position: fixed;
+        right: 60px;
+        bottom: 20px;
+    }
+
+    .frontpage-container-sebastian img {
+        width: 150px;
+        transform: scaleX(-1) rotate(3deg);
+    }
+
+    .frontpage-container-sebastian-taleboble {
+        display: block;
+        position: fixed;
+        right: 200px;
+        bottom: 440px;
+    }
+
+    .frontpage-container-sebastian-taleboble img {
+        width: 200px;
+    }
+    
+    // @media only screen and (min-height: 660px) {
+
+    //     .frontpage-container-entryway-sign {
+    //         height: 70px;
+    //         bottom: 15vh;
+    // }
+
+    // @media only screen and (max-height: 660px) {
+
+    //     .frontpage-container-entryway-sign {
+    //         bottom: 100px;
+    //     }
+    // }
+}
+
+@media only screen and (min-width: 1025px) {
+    .frontpage-container-sebastian {
+        left: 820px;
+    }
+
+    .frontpage-container-sebastian-taleboble {
+        left: 630px;
+    }
 }

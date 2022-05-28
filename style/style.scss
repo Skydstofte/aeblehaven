@@ -20,6 +20,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
+    overflow: hidden;
 }
 
 a:link {text-decoration: none;}
@@ -49,7 +50,7 @@ a:active {text-decoration: none;}
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 #aeblehaven-header-sky {
