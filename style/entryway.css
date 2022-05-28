@@ -1,0 +1,198 @@
+.aeblehaven-header {
+  background-image: none;
+  height: 240px;
+}
+
+.aeblehaven-header h1 {
+  margin: 50px auto 0;
+  width: 80%;
+  text-align: center;
+  font-size: 50px;
+}
+
+.entryway-container {
+  width: 100%;
+  min-width: 320px;
+  height: 100vh;
+  position: relative;
+}
+
+.entryway-content-entryway {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.entryway-content-entryway #entryway-mobile {
+  position: fixed;
+  bottom: 0px;
+  min-width: 1600px;
+}
+
+#entryway-desktop {
+  display: none;
+}
+
+.entryway-container-entryway-sign {
+  position: fixed;
+  bottom: 130px;
+  background-color: #E8F9FF;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 150px;
+  font-family: "IM Fell English SC", serif;
+  padding: 5px 0;
+}
+
+.entryway-container-entryway-sign h1 {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+.entryway-container-entryway-sign p {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+  color: black;
+}
+
+.entryway-container-sebastian {
+  display: none;
+}
+
+.entryway-container-sebastian-taleboble {
+  display: none;
+}
+
+#taleboble-one {
+  display: none;
+}
+
+#taleboble-two {
+  display: none;
+}
+
+.entryway-container-appletrees {
+  display: none;
+}
+
+@media only screen and (min-width: 769px) {
+  .entryway-content-entryway {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  #entryway-mobile {
+    display: none;
+  }
+  .entryway-content-entryway #entryway-desktop {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: -540px;
+    height: 70vh;
+    min-height: 590px;
+    max-height: 400px;
+  }
+  .entryway-container-entryway-sign {
+    height: 70px;
+    bottom: 120px;
+    left: 386px;
+  }
+  .entryway-container-sebastian {
+    display: block;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+  }
+  .entryway-container-sebastian img {
+    width: 150px;
+    -webkit-transform: scaleX(-1) rotate(3deg);
+            transform: scaleX(-1) rotate(3deg);
+  }
+  .entryway-container-sebastian-taleboble {
+    display: block;
+    position: fixed;
+    right: 160px;
+    bottom: 400px;
+    font-family: "IM Fell English SC", serif;
+    font-size: 25px;
+  }
+  .entryway-container-sebastian-taleboble img {
+    width: 200px;
+  }
+  #taleboble-one {
+    display: block;
+    position: fixed;
+    right: 150px;
+    bottom: 430px;
+    width: 180px;
+    line-height: 0.8;
+  }
+  #taleboble-two {
+    display: block;
+    position: fixed;
+    right: 160px;
+    bottom: 420px;
+    width: 170px;
+    line-height: 0.8;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .entryway-container-sebastian {
+    left: 850px;
+  }
+  .entryway-container-sebastian-taleboble {
+    left: 670px;
+  }
+  #taleboble-one {
+    left: 700px;
+  }
+  #taleboble-two {
+    left: 700px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .entryway-content-entryway {
+    z-index: 0;
+  }
+  .entryway-container-sebastian {
+    left: 950px;
+  }
+  .entryway-container-sebastian-taleboble {
+    left: 770px;
+  }
+  #taleboble-one {
+    left: 800px;
+  }
+  #taleboble-two {
+    left: 800px;
+  }
+  .entryway-container-appletrees {
+    display: block;
+  }
+  .entryway-container-appletrees img {
+    position: fixed;
+    width: 1000px;
+    bottom: 100px;
+    left: 1100px;
+    z-index: -1;
+  }
+}
+/*# sourceMappingURL=entryway.css.map */

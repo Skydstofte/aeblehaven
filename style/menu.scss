@@ -30,7 +30,10 @@ $font-body: 'Miriam Libre', sans-serif;
     margin: 0 auto;
     font-family: $font-headline;
     font-size: 20px;
+}
 
+.menu-container-li ul {
+    margin-bottom: 20px;
 }
 
 // mobile-first styling
