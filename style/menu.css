@@ -1,3 +1,7 @@
+body {
+  overflow-y: scroll;
+}
+
 .aeblehaven-header h1 {
   text-align: center;
   font-family: "IM Fell English SC", serif;

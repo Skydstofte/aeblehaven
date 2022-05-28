@@ -4,6 +4,10 @@
 $font-headline: 'IM Fell English SC', serif;
 $font-body: 'Miriam Libre', sans-serif;
 
+body {
+    overflow-y: scroll;
+}
+
 // menu header styling
 .aeblehaven-header h1 {
     text-align: center;
