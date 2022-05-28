@@ -79,5 +79,10 @@ body {
     color: white;
     text-align: center;
   }
+  .desktop-foodmenu {
+    width: 500px;
+    max-width: 750px;
+    position: fixed;
+  }
 }
 /*# sourceMappingURL=menu.css.map */

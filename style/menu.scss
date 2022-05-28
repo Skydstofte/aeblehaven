@@ -97,11 +97,12 @@ body {
     }
 
     // // foodmenu content styling
-    // .desktop-foodmenu {
-    //     width: 500px;
-    //     max-width: 750px;
+    .desktop-foodmenu {
+        width: 500px;
+        max-width: 750px;
+        position: fixed;
         
 
-    // }
+    }
    
 }
