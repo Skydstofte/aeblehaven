@@ -22,8 +22,8 @@ $font-body: 'Miriam Libre', sans-serif;
     display: none;
 }
 
-// menu main content
-.menu-container-mobile {
+// food menu main content
+.foodmenu-container-mobile {
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -32,13 +32,13 @@ $font-body: 'Miriam Libre', sans-serif;
     font-size: 20px;
 }
 
-.menu-container-li ul {
+.foodmenu-container-li ul {
     margin-bottom: 20px;
 }
 
 // mobile-first styling
 @media only screen and (min-width: 480px) {
-    .menu-container {
+    .foodmenu-container {
         font-size: 4.167vw;
     }
     
@@ -70,7 +70,7 @@ $font-body: 'Miriam Libre', sans-serif;
         
     }
 
-    #mobile-menu {
+    #mobile-foodmenu {
         display: none;
     }
 
@@ -79,7 +79,7 @@ $font-body: 'Miriam Libre', sans-serif;
     }
 
     // Menu styling
-    #desktop-menu {
+    #desktop-foodmenu {
         width: 90%;
         display: flex;
         justify-content: space-between;
@@ -92,14 +92,12 @@ $font-body: 'Miriam Libre', sans-serif;
 
     }
 
-    // menu content styling
-    .menu-container-desktop-ul {
-        width: 300px;
-        max-width: 750px;
+    // // foodmenu content styling
+    // .desktop-foodmenu {
+    //     width: 500px;
+    //     max-width: 750px;
         
 
-    
-    
-    }
-    
+    // }
+   
 }
