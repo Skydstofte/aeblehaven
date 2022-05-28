@@ -36,10 +36,14 @@ $font-body: 'Miriam Libre', sans-serif;
     position: sticky;
 }
 
-.frontpage-content-entryway img {
+.frontpage-content-entryway #entryway-mobile {
     position: fixed;
     bottom: 0px;
     min-width: 1600px;
+}
+
+#entryway-desktop {
+    display: none;
 }
 
 .frontpage-container-entryway-sign {
@@ -66,39 +70,87 @@ $font-body: 'Miriam Libre', sans-serif;
     color: black;
 }
 
+.frontpage-container-sebastian {
+    display: none;
+}
+
+.frontpage-container-sebastian-taleboble {
+    display: none;
+}
+
 @media only screen and (min-width: 769px) {
     .frontpage-content-entryway {
         width: 100%;
         display: flex;
-        justify-content: left;
+        justify-content: center;
         position: sticky;
     }
 
-    .frontpage-content-entryway img {
+    #entryway-mobile {
+        display: none;
+    }
+
+    .frontpage-content-entryway #entryway-desktop {
+        display: block;
         position: fixed;
         bottom: 0;
-        left: -800px;
+        // left: -32.4rem;
+        left: -540px;
         height: 70vh;
-        min-height: 460px;
+        // min-height: 460px;
+        min-height: 590px;
     }
 
     .frontpage-container-entryway-sign {
         height: 70px;
-        bottom: 180px;
+        bottom: 120px;
+        left: 386px;
+    }
 
+    .frontpage-container-sebastian {
+        display: block;
+        position: fixed;
+        right: 60px;
+        bottom: 20px;
+    }
+
+    .frontpage-container-sebastian img {
+        width: 150px;
+        transform: scaleX(-1) rotate(3deg);
+    }
+
+    .frontpage-container-sebastian-taleboble {
+        display: block;
+        position: fixed;
+        right: 200px;
+        bottom: 440px;
+    }
+
+    .frontpage-container-sebastian-taleboble img {
+        width: 200px;
     }
     
-    @media only screen and (min-height: 660px) {
-        .frontpage-container-entryway-sign {
-            height: 70px;
-            bottom: 27vh;
-        }
-    }
+    // @media only screen and (min-height: 660px) {
 
-    @media only screen and (max-height: 660px) {
-        .frontpage-container-entryway-sign {
-            bottom: 180px;
-        }
-    }
+    //     .frontpage-container-entryway-sign {
+    //         height: 70px;
+    //         bottom: 15vh;
+    // }
+
+    // @media only screen and (max-height: 660px) {
+
+    //     .frontpage-container-entryway-sign {
+    //         bottom: 100px;
+    //     }
+    // }
 }
 
+@media only screen and (min-width: 1025px) {
+    .frontpage-container-sebastian {
+        left: 820px;
+    }
+
+    .frontpage-container-sebastian-taleboble {
+        left: 630px;
+    }
+}
