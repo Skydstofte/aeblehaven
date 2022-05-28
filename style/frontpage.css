@@ -1,5 +1,5 @@
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  overflow: visible;
+body {
+  overflow-y: scroll;
 }
 
 .frontpage-container {
@@ -14,18 +14,92 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 0;
 }
 
 .frontpage-content {
-  width: 100%;
+  width: 80%;
 }
 
 .frontpage-content img {
+  width: 100%;
+}
+
+#kiosken {
+  margin: 20px 0 0 5px;
+  position: relative;
+  width: 100%;
+}
+
+#appletrees {
+  margin: 0 0 0 0;
+  position: relative;
+  left: 0;
+  width: 100%;
+}
+
+#sebastian {
+  margin: -130px 0 0 60%;
+  position: relative;
+  width: 25%;
+  -webkit-transform: scaleX(-1) rotate(3deg);
+          transform: scaleX(-1) rotate(3deg);
+}
+
+#rollercoaster {
+  margin: 0 0 0 20px;
+  position: relative;
+  top: -120px;
   width: 80%;
 }
 
 #isbaren {
-  -ms-grid-column-align: left;
-      justify-self: left;
+  margin: -100px 5px 10px 10px;
+  position: relative;
+  width: 95%;
+}
+
+#bikestation {
+  margin: 0 0 220px 25%;
+  position: relative;
+  width: 70%;
+}
+
+#sign {
+  position: fixed;
+  width: 210px;
+  z-index: 1;
+  bottom: 4px;
+  left: 45px;
+}
+
+.frontpage-bottom img {
+  position: fixed;
+  bottom: -10px;
+  left: -10px;
+  height: 160px;
+  z-index: 0;
+}
+
+.frontpage-bottom-sign-info {
+  position: fixed;
+  z-index: 2;
+  bottom: 30px;
+  left: 60px;
+  width: 140px;
+  text-align: center;
+}
+
+.frontpage-bottom-sign-info h3 {
+  font-size: 22px;
+  padding: 5px 0;
+}
+
+.frontpage-bottom-sign-info p {
+  font-size: 24px;
+}
+
+.frontpage-bottom-sign-info address {
+  font-size: 24px;
 }
 /*# sourceMappingURL=frontpage.css.map */
