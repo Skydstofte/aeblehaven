@@ -89,6 +89,9 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
+  .aeblehaven-header h1 {
+    top: 0px;
+  }
   .entryway-content-entryway {
     width: 100%;
     display: -webkit-box;
@@ -148,7 +151,7 @@ body {
     line-height: 0.8;
   }
   #taleboble-two {
-    display: block;
+    display: none;
     position: fixed;
     right: 160px;
     bottom: 420px;
