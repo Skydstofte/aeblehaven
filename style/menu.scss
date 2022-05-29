@@ -52,6 +52,10 @@ $box-shadow:
     display: none;
 }
 
+#desktop-foodmenu-headlines {
+    display: none;
+}
+
 // mobile-first styling
 @media only screen and (min-width: 480px) {
     .aeblehaven-header h4 {
@@ -73,21 +77,31 @@ $box-shadow:
 
     .aeblehaven-header {
         h1 {
-            z-index: 4;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 190px;
-            position: fixed;
-            font-size: 55px;
+            display: none;
         }
 
         h4 {
-            z-index: 4;
-            top: 240px;
-            left: 50%;
-            transform: translateX(-50%); 
-            position: absolute;
-            font-size: 40px;  
+            display: none;
+        }
+    }
+
+    #desktop-foodmenu-headlines {
+        display: block;
+        width: 100%;
+        position: fixed;
+        z-index: 5;
+        font-family: $font-headline;
+        top: 100px;
+    }
+
+    #desktop-foodmenu-headlines {
+        h1 {
+            text-align: center;
+            font-size: 74px;
+        }
+        h4 {
+            text-align: center;
+            font-size: 34px;
         }
     }
 
@@ -124,7 +138,7 @@ $box-shadow:
     #background {
         display: block;
         width: 100%;
-        top: 200px;
+        // top: 200px;
     }
 
     #background img {
@@ -132,10 +146,11 @@ $box-shadow:
         width: 100%;
         max-width: 1150px;
         left: 50%;
-        top: 200px;
-        transform: translateX(-50%);
+        bottom: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         box-shadow: $box-shadow;
-        z-index: 2;
+        z-index: 3;
     }
 
     // foodmenu content styling
@@ -166,7 +181,59 @@ $box-shadow:
     }
 
     .foodmenu-container-desktop-items-hover {
+        position: fixed;  
         display: none;
+        background-color: #A38978;
+        padding: 5px;
+        box-shadow: $box-shadow;
+    }
+
+    .foodmenu-container-desktop-items:hover #det-salte-list {
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+    }
+
+    #det-salte-list ul li {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .foodmenu-container-desktop-items:hover #det-søde-list {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
+
+    #det-søde-list ul li {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .foodmenu-container-desktop-items:hover #det-varme-list {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
+
+    #det-varme-list ul li {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .foodmenu-container-desktop-items:hover #det-kolde-list {
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+    }
+
+    #det-kolde-list ul li {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
     }
    
 }
