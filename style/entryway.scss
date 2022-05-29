@@ -6,6 +6,10 @@ $font-body: 'Miriam Libre', sans-serif;
 
 // entryway header styling - mobilefirst
 
+body {
+    overflow: hidden;
+}
+
 .aeblehaven-header {
     background-image: none;
     height: 240px;

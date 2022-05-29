@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .aeblehaven-header {
   background-image: none;
   height: 240px;
