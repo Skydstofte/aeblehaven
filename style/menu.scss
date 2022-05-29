@@ -80,9 +80,9 @@ $box-shadow:
 
         h4 {
             z-index: 4;
-            left: 50%;
-            transform: translateX(-50%);
             top: 240px;
+            left: 50%;
+            transform: translateX(-50%); 
             position: absolute;
             font-size: 40px;  
         }
@@ -110,16 +110,11 @@ $box-shadow:
     }
 
     #logo-container-homebutton h3 {
-        color: white;
-        
+        color: white;   
     }
 
     #mobile-foodmenu {
         display: none;
-    }
-
-    .aeblehaven-header {
-        background: none;
     }
 
     // Menu styling
@@ -147,8 +142,8 @@ $box-shadow:
         display: block;
         font-family: $font-headline;
         font-size: 20px;
-        text-align: center; 
         color: white;
+        text-align: center; 
         z-index: 3;
         position: absolute;
         left: 51.3%;
@@ -163,7 +158,7 @@ $box-shadow:
         width: 100%;
     }
     
-    .foodmenu-container-desktop-items img{
+    .foodmenu-container-desktop-items img {
         width: 90%;
     }
 
