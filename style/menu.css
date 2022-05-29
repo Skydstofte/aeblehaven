@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .aeblehaven-header h1 {
   text-align: center;
   font-family: "IM Fell English SC", serif;
@@ -32,6 +33,7 @@
 
 .foodmenu-container-li ul {
   margin-bottom: 20px;
+  list-style-type: none;
 }
 
 .foodmenu-container-desktop {
@@ -97,19 +99,19 @@
   #background {
     display: block;
     width: 100%;
-    top: 200px;
   }
   #background img {
     position: fixed;
     width: 100%;
     max-width: 1150px;
     left: 50%;
-    top: 200px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    bottom: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
             box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    z-index: 2;
+    z-index: 3;
   }
   #desktop-foodmenu {
     width: 80%;
@@ -141,7 +143,84 @@
     width: 90%;
   }
   .foodmenu-container-desktop-items-hover {
+    position: fixed;
     display: none;
+    background-color: #A38978;
+    padding: 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .foodmenu-container-desktop-items:hover #det-salte-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 350px;
+  }
+  #det-salte-list ul li {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .foodmenu-container-desktop-items:hover #det-søde-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 300px;
+  }
+  #det-søde-list ul li {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .foodmenu-container-desktop-items:hover #det-varme-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 300px;
+  }
+  #det-varme-list ul li {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .foodmenu-container-desktop-items:hover #det-kolde-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 350px;
+  }
+  #det-kolde-list ul li {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=menu.css.map */
