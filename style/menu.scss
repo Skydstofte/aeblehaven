@@ -36,10 +36,12 @@ $box-shadow:
     margin: 0 auto;
     font-family: $font-headline;
     font-size: 20px;
+    
 }
 
 .foodmenu-container-li ul {
     margin-bottom: 20px;
+    list-style-type: none;
 }
 
 .foodmenu-container-desktop {
@@ -58,6 +60,7 @@ $box-shadow:
 
     .foodmenu-container-li {
         font-size: 4.2vw;
+        
     }
     
 }
