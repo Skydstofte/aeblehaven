@@ -51,6 +51,10 @@ $box-shadow:
     display: none;
 }
 
+#desktop-foodmenu-headlines {
+    display: none;
+}
+
 // mobile-first styling
 @media only screen and (min-width: 480px) {
     .aeblehaven-header h4 {
@@ -71,21 +75,31 @@ $box-shadow:
 
     .aeblehaven-header {
         h1 {
-            z-index: 4;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 190px;
-            position: fixed;
-            font-size: 55px;
+            display: none;
         }
 
         h4 {
-            z-index: 4;
-            top: 240px;
-            left: 50%;
-            transform: translateX(-50%); 
-            position: absolute;
-            font-size: 40px;  
+            display: none;
+        }
+    }
+
+    #desktop-foodmenu-headlines {
+        display: block;
+        width: 100%;
+        position: fixed;
+        z-index: 5;
+        font-family: $font-headline;
+        top: 100px;
+    }
+
+    #desktop-foodmenu-headlines {
+        h1 {
+            text-align: center;
+            font-size: 74px;
+        }
+        h4 {
+            text-align: center;
+            font-size: 34px;
         }
     }
 

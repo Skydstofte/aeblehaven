@@ -44,6 +44,10 @@
   display: none;
 }
 
+#desktop-foodmenu-headlines {
+  display: none;
+}
+
 @media only screen and (min-width: 480px) {
   .aeblehaven-header h4 {
     font-size: 5.2vw;
@@ -58,22 +62,26 @@
     z-index: 3;
   }
   .aeblehaven-header h1 {
-    z-index: 4;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    top: 190px;
-    position: fixed;
-    font-size: 55px;
+    display: none;
   }
   .aeblehaven-header h4 {
-    z-index: 4;
-    top: 240px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    position: absolute;
-    font-size: 40px;
+    display: none;
+  }
+  #desktop-foodmenu-headlines {
+    display: block;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    font-family: "IM Fell English SC", serif;
+    top: 100px;
+  }
+  #desktop-foodmenu-headlines h1 {
+    text-align: center;
+    font-size: 74px;
+  }
+  #desktop-foodmenu-headlines h4 {
+    text-align: center;
+    font-size: 34px;
   }
   #background-container {
     background-image: url(/images/grassbackground.svg);
