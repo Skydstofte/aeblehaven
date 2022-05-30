@@ -1,4 +1,4 @@
-// Arbejder på en js løsning til mouseover istedet for 
+// Jeg har arbejdet på en js løsning til mouseover istedet for 
 // løsningen ved css, blot for øvelse, da den ikke findes nødvendig!
 
 // const detSalte = document.getElementById('det-salte');
