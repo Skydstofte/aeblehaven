@@ -145,42 +145,42 @@ $box-shadow:
 
     #history-container-textbox1:hover #textbox-1 {
         display: block;
-        width: 40vw;
+        width: 45vw;
         position: absolute;
-        transform: translateX(45vw);
-        margin-top: 150px;
+        transform: translateX(35vw);
+        top: 120px;
         z-index: 1;
     } 
     #history-container-textbox2:hover #textbox-2 {
         display: block;
-        width: 40vw;
+        width: 45vw;
         position: absolute;
-        transform: translateX(7vw);
-        margin-top: 550px;
+        transform: translateX(1vw);
+        top: 150px;
         z-index: 1;
     } 
     #history-container-textbox3:hover #textbox-3 {
         display: block;
-        width: 40vw;
+        width: 45vw;
         position: absolute;
         transform: translateX(-30vw);
-        margin-top: 80px;
+        top: -50px;
         z-index: 1;
     } 
     #history-container-textbox4:hover #textbox-4 {
         display: block;
-        width: 40vw;
+        width: 45vw;
         position: absolute;
-        transform: translateX(7vw);
-        margin-bottom: 600px;
+        transform: translateX(-7vw);
+        bottom: 200px;
         z-index: 1;
     } 
     #history-container-textbox5:hover #textbox-5 {
         display: block;
-        width: 40vw;
+        width: 45vw;
         position: absolute;
-        transform: translateX(45vw);
-        margin-top: 10px;
+        transform: translateX(30vw);
+        bottom: 50px;
         z-index: 1;
     }
 

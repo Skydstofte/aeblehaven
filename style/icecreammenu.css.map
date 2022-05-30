@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAUA,AAAA,SAAS,CAAC;EACN,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,SAAS,CAAC,EAAE,CAAC;EACT,WAAW,EAZC,oBAAoB,EAAE,KAAK;EAavC,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,KAAK;EAChB,eAAe,EAAE,SAAS;CAC7B",
+    "sources": [
+        "icecreammenu.scss"
+    ],
+    "names": [],
+    "file": "icecreammenu.css"
+}

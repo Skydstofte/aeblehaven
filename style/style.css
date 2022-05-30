@@ -33,6 +33,100 @@ a:active {
   text-decoration: none;
 }
 
+.butterfly-container {
+  position: fixed;
+  z-index: 7;
+  left: -50px;
+  top: 100px;
+  -webkit-animation: butterfly 1.5s linear infinite;
+          animation: butterfly 1.5s linear infinite;
+}
+
+.butterfly-container #butterfly img {
+  position: fixed;
+  width: 50px;
+  left: -112px;
+  -webkit-animation: flying-butterfly 20s linear infinite;
+          animation: flying-butterfly 20s linear infinite;
+}
+
+.butterfly-container #butterfly-down img {
+  position: fixed;
+  top: 16px;
+  left: -110px;
+  width: 50px;
+  -webkit-animation: flying-butterfly 20s linear infinite;
+          animation: flying-butterfly 20s linear infinite;
+}
+
+@-webkit-keyframes butterfly {
+  100% {
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px);
+  }
+  60% {
+    -webkit-transform: translateY(19px);
+            transform: translateY(19px);
+  }
+  50% {
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px);
+  }
+  10% {
+    -webkit-transform: translateY(-18px);
+            transform: translateY(-18px);
+  }
+  0% {
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px);
+  }
+}
+
+@keyframes butterfly {
+  100% {
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px);
+  }
+  60% {
+    -webkit-transform: translateY(19px);
+            transform: translateY(19px);
+  }
+  50% {
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px);
+  }
+  10% {
+    -webkit-transform: translateY(-18px);
+            transform: translateY(-18px);
+  }
+  0% {
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px);
+  }
+}
+
+@-webkit-keyframes flying-butterfly {
+  100% {
+    -webkit-transform: translateX(2950px);
+            transform: translateX(2950px);
+  }
+}
+
+@keyframes flying-butterfly {
+  100% {
+    -webkit-transform: translateX(2950px);
+            transform: translateX(2950px);
+  }
+}
+
+.hide-butterfly-down {
+  visibility: hidden;
+}
+
+.hide-butterfly {
+  visibility: hidden;
+}
+
 #background-container {
   background-color: #316439;
   background-image: url(/images/grassbackground.svg);

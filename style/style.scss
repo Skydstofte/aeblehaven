@@ -28,6 +28,62 @@ a:visited {text-decoration: none;}
 a:hover {text-decoration: none;}
 a:active {text-decoration: none;}
 
+// Butterfly styling - makes the butterfly move across the screen
+.butterfly-container {
+    position: fixed;
+    z-index: 7;
+    // transform: scaleX(-1);
+    left: -50px;
+    top: 100px;
+    animation: butterfly 1.5s linear infinite;
+
+    #butterfly img {
+        position: fixed;
+        width: 50px;
+        left: -112px;
+        animation: flying-butterfly 20s linear infinite;
+    }
+    
+    #butterfly-down img {
+        // display: none;
+        position: fixed;
+        top: 16px;
+        left: -110px;
+        width: 50px;
+        animation: flying-butterfly 20s linear infinite;
+    }
+}
+
+@keyframes butterfly {
+    100%{
+        transform: translateY(-16px);
+    }
+    60%{
+        transform: translateY(19px);
+    }
+    50%{
+        transform: translateY(18px);
+    }
+    10%{
+        transform: translateY(-18px);
+    }
+    0%{
+        transform: translateY(-16px);
+    }
+}
+@keyframes flying-butterfly {
+    100%{
+        transform: translateX(2950px);
+    }
+}
+
+.hide-butterfly-down {
+    visibility: hidden;
+}
+
+.hide-butterfly {
+    visibility: hidden;
+}
 
 // Background styling for all of the pages that has a grass background
 #background-container {
