@@ -29,6 +29,19 @@ $box-shadow:
     margin: 20px 0 0 5px;
     position: relative;
     width: 100%;
+
+    h2 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: $font-headline;
+        transform: translateY(-30px);
+        font-size: 30px;
+        background-color: rgba(13, 53, 5, 0.7);
+        border-radius: 8px;
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: $box-shadow;
+    }
 }
 
 #appletrees {
@@ -40,9 +53,11 @@ $box-shadow:
 
 #sebastian {
     margin: -130px 0 0 60%;
-    position: relative;
-    width: 25%;
+    position: fixed;
+    width: 155px;
     transform: scaleX(-1) rotate(3deg);
+    bottom: 10px;
+    z-index: 3;
 }
 
 #rollercoaster {
@@ -50,18 +65,21 @@ $box-shadow:
     position: relative;
     top: -120px;
     width: 80%;
+    display: none;
 }
 
 #isbaren {
     margin: -100px 5px 10px 10px;
     position: relative;
     width: 95%;
+    display: none;
 }
 
 #bikestation {
     margin: 0 0 220px 25%;
     position: relative;
     width: 70%;
+    display: none;
 
 }
 
@@ -76,7 +94,7 @@ $box-shadow:
 .entryway-container-sebastian-taleboble {
     display: block;
     position: fixed;
-    right: 180px;
+    right: 35%;
     bottom: 400px;
     font-family: $font-headline;
     font-size: 25px;
@@ -90,7 +108,7 @@ $box-shadow:
 #taleboble-one {
     display: block;
     position: fixed;
-    right: 170px;
+    right: 35%;
     bottom: 430px;
     width: 180px;
     line-height: 0.8;
@@ -100,7 +118,7 @@ $box-shadow:
 #taleboble-two {
     display: none;
     position: fixed;
-    right: 180px;
+    right: 35%;
     bottom: 420px;
     width: 170px;
     line-height: 0.8;
@@ -127,28 +145,31 @@ $box-shadow:
 .frontpage-bottom-sign-info {
     position: fixed;
     z-index: 2;
-    bottom: 32px;
+    bottom: 40px;
     left: 60px;
     width: 140px;
     text-align: center;
     font-family: $font-headline;
     line-height: 1.1;
-}
-
-.frontpage-bottom-sign-info {
+    
     h3 {
-        font-size: 22px;
-        padding: 5px 0;
+        font-size: 16px;
     }
 
     p {
-        font-size: 24px;
+        font-size: 22px;
+        padding-bottom: 5px;
     }
 
     address {
-        font-size: 24px;
+        font-size: 22px;
     }
 
+    a {
+        font-size: 22px;
+        text-decoration: underline;
+        color: black;
+    }
 }
 
 @media only screen and (min-width: 480px) {
@@ -165,12 +186,12 @@ $box-shadow:
         width: 465px;
     }
     
-    #sebastian {
-        margin: -130px 0 0 60%;
-        position: relative;
-        width: 120px;
-        transform: scaleX(-1) rotate(3deg);
-    }
+    // #sebastian {
+    //     margin: -130px 0 0 60%;
+    //     position: relative;
+    //     width: 120px;
+    //     transform: scaleX(-1) rotate(3deg);
+    // }
     
     #rollercoaster {
         margin: 0 0 0 10vw;
@@ -210,22 +231,22 @@ $box-shadow:
         z-index: 1;
     }
     
-    #appletrees {
-        position: fixed;
-        left: 70%;
-        width: 350px;
-        top: 150px;
-        z-index: 1;
-    }
+    // #appletrees {
+    //     position: fixed;
+    //     left: 70%;
+    //     width: 350px;
+    //     top: 150px;
+    //     z-index: 1;
+    // }
     
-    #sebastian {
-        position: fixed;
-        width: 90px;
-        transform: scaleX(-1) rotate(3deg);
-        top: 390px;
-        right: 100px;
-        z-index: 1;
-    }
+    // #sebastian {
+    //     position: fixed;
+    //     width: 90px;
+    //     transform: scaleX(-1) rotate(3deg);
+    //     top: 390px;
+    //     right: 100px;
+    //     z-index: 1;
+    // }
     
     #rollercoaster {
         position: fixed;
@@ -240,6 +261,19 @@ $box-shadow:
         top: 350px;
         left: 10%;
         z-index: 1;
+
+        h2 {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: $font-headline;
+            transform: translateY(-30px);
+            font-size: 30px;
+            background-color: rgba(13, 53, 5, 0.7);
+            border-radius: 8px;
+            width: 80%;
+            margin: 0 auto;
+            box-shadow: $box-shadow;
+        }
     }
     
     #bikestation {
@@ -271,6 +305,60 @@ $box-shadow:
 }
 
 @media only screen and (min-width: 930px) {
+
+    #sebastian {
+        width: 90px;
+        top: 390px;
+        right: 100px;
+    }
+    
+    #appletrees {
+        position: fixed;
+        left: 70%;
+        width: 350px;
+        top: 150px;
+        z-index: 1;
+    }
+
+    #rollercoaster {
+        position: absolute;
+        top: 400px;
+        right: 250px;
+        width: 300px;
+        display: block;
+    }
+    
+    #isbaren {
+        position: absolute;
+        width: 300px;
+        display: block;
+        left: 150px;
+    }
+    
+    #bikestation {
+        margin: 0 0 220px 25%;
+        position: absolute;
+        width: 300px;
+        display: block;
+    }
+
+    .entryway-container-sebastian-taleboble {
+        right: 200px;
+        bottom: 610px;
+    }
+
+    #taleboble-one {
+        right: 195px;
+        bottom: 640px;
+        width: 180px;
+    }
+
+    #taleboble-two {
+        right: 200px;
+        bottom: 640px;
+        width: 190px;
+    }
+
     #frontpage-bushandpavement {
         display: none;
     }

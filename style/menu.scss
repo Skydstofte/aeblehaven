@@ -56,6 +56,20 @@ $box-shadow:
     display: none;
 }
 
+// Icecream shortcut - styling
+.foodmenu-icecream-button h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: $font-headline;
+    transform: translateY(-30px);
+    font-size: 30px;
+    background-color: rgba(13, 53, 5, 0.7);
+    border-radius: 8px;
+    width: 50%;
+    margin: 40px auto;
+    box-shadow: $box-shadow;
+}
+
 // mobile-first styling
 @media only screen and (min-width: 480px) {
     .aeblehaven-header h4 {
@@ -234,6 +248,14 @@ $box-shadow:
         list-style-type: none;
         display: flex;
         justify-content: space-between;
+    }
+
+    .foodmenu-icecream-button h2 {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        width: 350px;
     }
    
 }
