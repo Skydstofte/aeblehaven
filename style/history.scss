@@ -46,7 +46,13 @@ $box-shadow:
     box-shadow: $box-shadow
 }
 
+.history-container-content-textbox-lessbutton {
+    display: none;
+}
 
+.history-container-content-textbox-extratext {
+    display: none;
+}
 
 // Styling to mobile-first 
 

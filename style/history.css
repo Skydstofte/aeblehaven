@@ -34,6 +34,14 @@
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+.history-container-content-textbox-lessbutton {
+  display: none;
+}
+
+.history-container-content-textbox-extratext {
+  display: none;
+}
+
 @media only screen and (min-width: 480px) {
   .history-container-content {
     width: 440px;

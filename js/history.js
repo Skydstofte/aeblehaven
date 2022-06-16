@@ -1,24 +1,17 @@
-const nav = document.getElementById('logo-container');
-let lastScrollY = window.scrollY;
+let extraText = document.querySelector('.history-container-content-textbox-extratext')
+let moreBtn = document.querySelector('.history-container-content-textbox-morebutton')
+let lessBtn = document.querySelector('.history-container-content-textbox-lessbutton')
 
-// Anti throttle for browsers without in built anti throttle
-let timeout;
+moreBtn.onclick = function() {
+    extraText.style.display = 'block';
+    // remove "more" and add "less"
+    moreBtn.style.display = 'none';
+    lessBtn.style.display = 'block';
+};
 
-window.addEventListener('scroll', function (event) {
-	// If there's a timer, cancel it
-	if (timeout) {
-		window.cancelAnimationFrame(timeout);
-	}
-
-	// Setup the new requestAnimationFrame()
-	timeout = window.requestAnimationFrame(function () {
-        if (window.innerWidth > 480) return
-        if (lastScrollY < window.scrollY) {
-            nav.classList.add("logo-container-minimized");
-        } else {
-            nav.classList.remove("logo-container-minimized");
-        }
-        lastScrollY = window.scrollY;
-    });
-
-}, false);
+lessBtn.onclick = function() {
+    extraText.style.display = 'none';
+    // remove "less" and add "more"
+    lessBtn.style.display = 'none';
+    moreBtn.style.display = 'block';
+};
