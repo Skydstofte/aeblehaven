@@ -25,13 +25,17 @@
 
 .history-container-content-textbox {
   font-family: "Miriam Libre", sans-serif;
-  background-color: #E8F9FF;
+  background-color: #e8f9ff;
   font-size: 20px;
   font-weight: bolder;
   padding: 20px;
   margin: 10px auto 40px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.history-container-content-textbox-extratext {
+  display: none;
 }
 
 @media only screen and (min-width: 480px) {
@@ -178,6 +182,12 @@
   }
   .history-container-content-textbox {
     width: 70%;
+  }
+  .history-container-content-textbox-extratext {
+    display: block;
+  }
+  .history-container-content-textbox-button {
+    display: none;
   }
   .history-container-arrows img {
     display: block;
