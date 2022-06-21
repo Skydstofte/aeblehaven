@@ -15,6 +15,7 @@ $box-shadow:
     justify-content: center;
     flex-direction: column;
     z-index: 0;
+    overflow-x: hidden;
 }
 
 .frontpage-content {
@@ -86,14 +87,14 @@ $box-shadow:
 #sign {
     position: fixed;
     width: 210px;
-    z-index: 1;
+    z-index: 4;
     bottom: 4px;
     left: 10px;
 }
 
 .frontpage-content-sign-info {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     bottom: 40px;
     left: 25px;
     width: 140px;
@@ -128,19 +129,20 @@ $box-shadow:
     bottom: 310px;
     font-family: $font-headline;
     font-size: 22px;
-    z-index: 1;
+    z-index: 3;
 }
 
 .entryway-container-sebastian-taleboble img {
-    width: 200px;
+    width: 140px;
+    height: 120px;
 }
 
 #taleboble-one {
     display: block;
     position: fixed;
-    right: 35%;
+    right: 37%;
     bottom: 340px;
-    width: 170px;
+    width: 110px;
     line-height: 0.8;
     color: black;
 }
@@ -148,9 +150,9 @@ $box-shadow:
 #taleboble-two {
     display: none;
     position: fixed;
-    right: 39%;
+    right: 37%;
     bottom: 340px;
-    width: 160px;
+    width: 110px;
     line-height: 0.8;
     color: black;
 }
@@ -169,7 +171,7 @@ $box-shadow:
     left: -10px;
     // width: 110%;
     height: 160px;
-    z-index: 0;
+    z-index: 2;
 }
 
 
@@ -182,18 +184,11 @@ $box-shadow:
     }
     
     #appletrees {
-        margin: 0 0 0 0;
+        margin: 0 0 200px 0;
         position: relative;
         left: 35vw;
         width: 465px;
     }
-    
-    // #sebastian {
-    //     margin: -130px 0 0 60%;
-    //     position: relative;
-    //     width: 120px;
-    //     transform: scaleX(-1) rotate(3deg);
-    // }
     
     #rollercoaster {
         margin: 0 0 0 10vw;
@@ -214,45 +209,32 @@ $box-shadow:
         width: 330px;
     
     }
-    
-    #sign {
-        position: fixed;
-        width: 210px;
-        z-index: 1;
-        bottom: 4px;
-        left: 45px;
-    }
 }
 
 @media only screen and (min-width: 769px) {
 
     #kiosken {
-        position: fixed;
-        width: 350px;
-        top: 300px;
+        position: absolute;
+        width: 450px;
+        top: 24vh;
         z-index: 1;
     }
     
-    // #appletrees {
-    //     position: fixed;
-    //     left: 70%;
-    //     width: 350px;
-    //     top: 150px;
-    //     z-index: 1;
-    // }
+    #appletrees {
+        position: fixed;
+        left: 60%;
+        width: 500px;
+        top: 150px;
+        z-index: 1;
+    }
     
-    // #sebastian {
-    //     position: fixed;
-    //     width: 90px;
-    //     transform: scaleX(-1) rotate(3deg);
-    //     top: 390px;
-    //     right: 100px;
-    //     z-index: 1;
-    // }
+    #sebastian {
+        right: 23%;
+    }
     
     #rollercoaster {
         position: fixed;
-        top: 300px;
+        top: 10vh;
         width: 250px;
         right: 150px;
     }
@@ -260,7 +242,7 @@ $box-shadow:
     #isbaren {
         position: fixed;
         width: 300px;
-        top: 350px;
+        top: 340px;
         left: 10%;
         z-index: 1;
 
@@ -286,80 +268,20 @@ $box-shadow:
         z-index: 4;
     }
 
-    // .frontpage-content-pathway {
-    //     display: block;
-    // }
-
-    // .frontpage-content-pathway img {
-    //     position: fixed;
-    //     width: 100%;
-    //     bottom: 5vh;
-    //     left: 0%;
-    // }
-
     #sign {
         position: fixed;
         width: 210px;
-        z-index: 1;
+        z-index: 4;
         bottom: 4px;
         left: 45px;
+    }
+
+    .frontpage-content-sign-info {
+        left: 60px;
     }
 }
 
 @media only screen and (min-width: 930px) {
-
-    #sebastian {
-        width: 90px;
-        top: 390px;
-        right: 100px;
-    }
-    
-    #appletrees {
-        position: fixed;
-        left: 70%;
-        width: 350px;
-        top: 150px;
-        z-index: 1;
-    }
-
-    #rollercoaster {
-        position: absolute;
-        top: 400px;
-        right: 250px;
-        width: 300px;
-        display: block;
-    }
-    
-    #isbaren {
-        position: absolute;
-        width: 300px;
-        display: block;
-        left: 150px;
-    }
-    
-    #bikestation {
-        margin: 0 0 220px 25%;
-        position: absolute;
-        width: 300px;
-        display: block;
-    }
-
-    .entryway-container-sebastian-taleboble {
-        right: 200px;
-        bottom: 610px;
-    }
-
-    #taleboble-one {
-        right: 195px;
-        bottom: 640px;
-        width: 180px;
-    }
-
-    #taleboble-two {
-        right: 200px;
-        bottom: 640px;
-        width: 190px;
-    }
 
     #frontpage-bushandpavement {
         display: none;
@@ -370,11 +292,64 @@ $box-shadow:
         height: auto;
         width: 110%;
         min-width: 1200px;
+        max-width: 1800px;
         left: -40px;
         bottom: -40px;
     }
 
     #frontpage-entryway img {
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    
+    #appletrees {
+        position: fixed;
+        left: 70%;
+        width: 450px;
+        top: 150px;
+        z-index: 1;
+    }
+
+    #rollercoaster {
+        position: absolute;
+        top: 350px;
+        right: 250px;
+        width: 300px;
+        display: block;
+    }
+    
+    #isbaren {
+        position: fixed;
+        width: 330px;
+        display: block;
+        left: 20%;
+        z-index: 2;
+    }
+    
+    #bikestation {
+        position: fixed;
+        width: 280px;
+        bottom: -200px;
+        right: 20px;
+        display: block;
+    }
+
+    .entryway-container-sebastian-taleboble {
+        right: 30vw;
+        bottom: 315px;
+    }
+
+    #taleboble-one {
+        right: 31vw;
+        bottom: 350px;
+        width: 110px;
+    }
+
+    #taleboble-two {
+        right: 31vw;
+        bottom: 350px;
+        width: 110px;
     }
 }
